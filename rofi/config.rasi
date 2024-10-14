@@ -1,0 +1,5 @@
+configuration {
+  show-icons:     true;
+  icon-theme:     "Papirus";
+}
+@theme "/home/hacker/.local/share/rofi/themes/spotlight-dark.rasi"

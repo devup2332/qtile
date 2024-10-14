@@ -1,0 +1,19 @@
+super + Return
+  kitty -c ~/.config/qtile/kitty/kitty.conf
+
+super + Escape
+	pkill -USR1 -x sxhkd; dunstify -u low -i ~/.config/qtile/assets/reload.svg 'sxhkd' 'The configuration file has been reloaded successfully!'
+
+super + m
+  rofi -show drun -config ~/.config/qtile/rofi/config.rasi
+
+super + g
+  google-chrome-stable
+  
+# take screen shot area 
+super + shift + s
+  xfce4-screenshooter -c -r
+
+# take screenshot
+super + s
+  xfce4-screenshooter
