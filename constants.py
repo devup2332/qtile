@@ -1,4 +1,3 @@
-
 colors = {
     "bg": "#1a1b26",
     "subbg": "#282a3b",

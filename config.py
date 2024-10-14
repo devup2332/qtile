@@ -2,6 +2,7 @@ from libqtile import bar, layout, qtile, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from constants import colors, commands
+from screens import screen_1
 import os
 
 mod = "mod4"
@@ -107,87 +108,7 @@ layouts = [
 
 
 screens = [
-    Screen(
-        top=bar.Bar(
-            [
-                widget.TextBox(
-                    text='  󰣇   ',
-                    fontsize=25,
-                    foreground=colors['blue'],
-                    background=colors["bg"]
-                ),
-                widget.Spacer(
-                    background=colors["bg"]
-                ),
-                widget.GroupBox(
-                    padding_x=10,
-                    fontsize=14,
-                    background=colors["bg"],
-                    foreground=colors["blue"],
-                    inactive=colors["inactive"],
-                    active=colors["fg"],
-                    highlight_method="line",
-                    other_current_screen_border=colors["yellow"],
-                    this_screen_border=colors["blue"],
-                    highlight_color=colors["subbg"],
-                ),
-                widget.Spacer(
-                    background=colors["bg"]
-                ),
-                widget.Systray(
-                    background=colors["bg"],
-                    icon_size=20
-                ),
-                widget.TextBox(
-                    text='   ',
-                    background=colors['bg'],
-                ),
-                widget.TextBox(
-                    text='   ',
-                    foreground=colors['green'],
-                    background=colors['bg'],
-                    fontsize=16
-                ),
-                widget.Volume(
-                    foreground=colors['fg'],
-                    background=colors['bg'],
-                    padding=5
-                ),
-                widget.TextBox(
-                    text='    ',
-                    foreground=colors['pink'],
-                    background=colors['bg'],
-                    fontsize=16
-                ),
-                widget.Net(
-                    background=colors['bg'],
-                    format='{down:.0f}{down_suffix} ↓↑ {up:.0f}{up_suffix}'
-
-                ),
-                widget.TextBox(
-                    text='    ',
-                    foreground=colors['yellow'],
-                    background=colors['bg'],
-                    fontsize=16
-                ),
-                widget.Clock(format="%Y-%m-%d %a %I:%M %p",
-                             background=colors['bg'], foreground=colors['fg']),
-                widget.TextBox(
-                    text='             ',
-                    background=colors['bg'],
-                ),
-            ],
-            40,
-            margin=[20, 15, 0, 15],
-
-            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
-        ),
-        # You can uncomment this variable if you see that on X11 floating resize/moving is laggy
-        # By default we handle these events delayed to already improve performance, however your system might still be struggling
-        # This variable is set to None (no cap) by default, but you can set it to 60 to indicate that you limit it to 60 events per second
-        # x11_drag_polling_rate = 60,
-    ),
+    screen_1
 ]
 
 # Drag floating layouts.
