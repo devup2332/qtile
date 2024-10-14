@@ -1,6 +1,11 @@
 # Qtile configuration
 This is my personal Qtile configuration. It is a simple configuration with a few custom keybindings and a custom theme.
 
+<p align="center" gap="20px">
+    <img src="https://res.cloudinary.com/dder8kjda/image/upload/v1728940626/Screenshot_2024-10-14_16-13-48_ozukvy.png" width="700"/>
+</p>
+
+
 ## 🚀 Installation
 
 1. Clone the repository

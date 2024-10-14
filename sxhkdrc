@@ -10,6 +10,9 @@ super + m
 super + g
   google-chrome-stable
   
+super + e
+  thunar
+
 # take screen shot area 
 super + shift + s
   xfce4-screenshooter -c -r
