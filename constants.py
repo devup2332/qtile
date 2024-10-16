@@ -1,5 +1,5 @@
 colors = {
-    "bg": "#1a1b26",
+    "bg": "#0b0c0f",
     "subbg": "#282a3b",
     "fg": "#bec6ed",
     "blue": "#1563bd",
@@ -9,7 +9,7 @@ colors = {
     "inactive": "#434459"
 }
 
-wallpaper_path = "~/.config/qtile/assets/wallpaper_main.png"
+wallpaper_path = "~/.config/qtile/assets/wallpaper_main.jpg"
 
 commands = [
     "pidof -q picom || { picom --config ~/.config/qtile/picom/picom.conf &}",
